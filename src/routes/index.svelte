@@ -1,5 +1,6 @@
-<style>
-	p {
-		margin: 1em auto;
-	}
-</style>
+<Hero></Hero>
+
+
+<script>
+	import Hero from '../features/hero.svelte'
+</script>

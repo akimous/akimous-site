@@ -1,7 +1,13 @@
-<script>
-	export let segment;
-
-</script>
+<nav>
+	<a class="home" href=".">
+		<img src="logo.svg" alt="logo"><span>Akimous</span>
+	</a>
+	<ul>
+		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
+		<li><a rel=prefetch class:selected="{segment === 'start'}" href='start'>Getting Started</a></li>
+		<li><a href='.'>GitHub</a></li>
+	</ul>
+</nav>
 
 <style>
 	nav {
@@ -9,24 +15,25 @@
 		font-weight: 300;
 		padding: 0 1rem;
 		height: 3.5rem;
+		font-family: Saira;
 	}
 
 	.home {
 		position: relative;
-		width: 8rem;
-		height: 2.5rem;
-		background-repeat: no-repeat;
-		background-size: 5rem 2.5rem;
-		background-position: 0 .5rem;
-
+		width: 12rem;
+		height: 3.5rem;
 		padding-left: 5rem;
-		font-family: Saira;
 		font-size: 2rem;
-		padding-top: .4rem;
 		color: var(--primary1);
-
 		user-select: none;
 		cursor: default;
+	}
+	
+	img {
+		position: relative;
+		height: 2.5rem;
+		top: .5rem;
+		padding-right: .5rem;
 	}
 
 	ul {
@@ -34,7 +41,6 @@
 		margin: 0;
 		top: 0;
 		right: 3rem;
-		font-family: Saira;
 	}
 
 	/* clearfix */
@@ -74,11 +80,8 @@
 
 </style>
 
-<nav>
-	<a class="home" href="." style="background-image:url(logo.svg)">Akimous</a>
-	<ul>
-		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
-		<li><a rel=prefetch class:selected="{segment === 'start'}" href='start'>Getting Started</a></li>
-		<li><a href='.'>GitHub</a></li>
-	</ul>
-</nav>
+
+<script>
+	export let segment;
+
+</script>
