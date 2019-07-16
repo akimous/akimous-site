@@ -15,7 +15,9 @@ const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/
 export default {
 	client: {
 		input: config.client.input(),
-		output: Object.assign(config.client.output(), { sourcemap: dev }),
+		output: Object.assign(config.client.output(), {
+			sourcemap: dev
+		}),
 		plugins: [
 			replace({
 				'process.browser': true,
@@ -24,7 +26,6 @@ export default {
 			svelte({
 				dev,
 				hydratable: true,
-				emitCss: true
 			}),
 			resolve({
 				browser: true,
@@ -33,7 +34,7 @@ export default {
 			commonjs(),
 			!dev && terser({
 				module: true
-			})
+			}),
 		],
 		onwarn,
 	},

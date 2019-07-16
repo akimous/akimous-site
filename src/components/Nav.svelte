@@ -1,6 +1,6 @@
 <nav>
 	<a class="home" href=".">
-		<img src="logo.svg" alt="logo"><span>Akimous</span>
+		<img id="logo" src="logo.svg" alt="logo"><span>Akimous</span>
 	</a>
 	<ul>
 		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
@@ -41,6 +41,17 @@
 		margin: 0;
 		top: 0;
 		right: 3rem;
+	}
+		
+	@media (max-width: 600px) {
+		.home {
+			padding-left: 0;
+			font-size: 1.5rem;
+		}
+		
+		ul {
+			right: 0;
+		}
 	}
 
 	/* clearfix */

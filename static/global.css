@@ -32,3 +32,30 @@ code {
 	border-radius: 2px;
 }
 
+/*Features*/
+.feature-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.feature-container .glide {
+	width: 26rem;
+	max-width: 32rem;
+	flex-grow: 1;
+	margin: 0 1rem;
+}
+
+.feature-container img {
+	width: 100%;
+	border-radius: .5rem;
+}
+
+.feature-container .description {
+	width: 26rem;
+	max-width: 32rem;
+	flex-grow: 2;
+	margin: 0 1rem;
+}

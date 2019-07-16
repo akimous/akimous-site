@@ -32,7 +32,7 @@
 		border-radius: .5vw .5vw 0 0;
 	}
 
-	@media (min-width: 720px) {
+	@media (min-width: 600px) {
 		img {
 			width: 70vw;
 		}

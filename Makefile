@@ -6,3 +6,6 @@ dev:
 	
 upgrade:
 	yarn upgrade --interactive
+	
+serve:
+	yarn run serve __sapper__/export
