@@ -41,11 +41,16 @@ code {
 	padding: 2rem 0;
 }
 
+.feature-container video,
 .feature-container .glide {
 	width: 26rem;
 	max-width: 32rem;
 	flex-grow: 1;
 	margin: 0 1rem;
+}
+
+.feature-container video {
+	border-radius: .5rem;
 }
 
 .feature-container img {
