@@ -9,7 +9,7 @@
 		</p>
 	</div>
 
-	<div class="glide">
+	<div bind:this={glide} class="glide">
 		<div class="glide__track" data-glide-el="track">
 			<ul class="glide__slides">
 				<li class="glide__slide"><img src="img/doc1.png" alt=""></li>
@@ -37,8 +37,10 @@
 	import { onMount } from 'svelte'
 	import Glide from '@glidejs/glide'
 
+	let glide
+	
 	onMount(() => {
-		new Glide('.glide', {
+		new Glide(glide, {
 			autoplay: 5000,
 		}).mount()
 	})

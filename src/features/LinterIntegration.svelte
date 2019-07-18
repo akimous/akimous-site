@@ -1,4 +1,16 @@
 <div class="feature-container">
+	<div bind:this={glide} class="glide">
+		<div class="glide__track" data-glide-el="track">
+			<ul class="glide__slides">
+				<li class="glide__slide"><img src="img/linter1.png" alt=""></li>
+				<li class="glide__slide"><img src="img/linter2.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="glide__bullets" data-glide-el="controls[nav]">
+			<button class="glide__bullet" data-glide-dir="=0" aria-label="1"></button>
+			<button class="glide__bullet" data-glide-dir="=1" aria-label="2"></button>
+		</div>
+	</div>
 	<div class="description">
 		<h1>Linter and Beautifier Integration</h1>
 		<p>
@@ -8,7 +20,7 @@
 			YAPF and isort are automatically executed to beautify the code when you save it.
 		</p>
 	</div>
-	
+
 </div>
 
 
@@ -20,3 +32,17 @@
 
 </style>
 
+
+<script>
+	import { onMount } from 'svelte'
+	import Glide from '@glidejs/glide'
+	
+	let glide
+
+	onMount(() => {
+		new Glide(glide, {
+			autoplay: 5000,
+		}).mount()
+	})
+
+</script>
