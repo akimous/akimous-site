@@ -3,6 +3,7 @@
 <Documentation></Documentation>
 <LayeredKeyboardControl></LayeredKeyboardControl>
 <RealtimeFormatter></RealtimeFormatter>
+<Console></Console>
 <LinterIntegration></LinterIntegration>
 
 <script>
@@ -12,4 +13,5 @@
 	import LinterIntegration from '../features/LinterIntegration.svelte'
 	import LayeredKeyboardControl from '../features/LayeredKeyboardControl.svelte'
 	import RealtimeFormatter from '../features/RealtimeFormatter.svelte'
+	import Console from '../features/Console.svelte'
 </script>
