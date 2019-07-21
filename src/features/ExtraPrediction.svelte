@@ -1,5 +1,5 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay loop src="img/extraPrediction.mp4">
+	<video bind:this={video} autoplay muted loop playsinline src="img/extraPrediction.mp4">
 		Sorry, your browser doesn't support embedded videos.
 	</video>
 	<div class="description">
@@ -26,11 +26,12 @@
 
 <script>
 	import { onMount } from 'svelte'
-	
+
 	let video
 	onMount(() => {
 		setTimeout(() => {
-				video.play()
-			})
+			video.play()
 		}, 3000)
+	})
+
 </script>

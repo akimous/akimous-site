@@ -1,6 +1,7 @@
 <Hero></Hero>
 <ExtraPrediction></ExtraPrediction>
 <Documentation></Documentation>
+<LayeredKeyboardControl></LayeredKeyboardControl>
 <LinterIntegration></LinterIntegration>
 
 <script>
@@ -8,4 +9,5 @@
 	import Documentation from '../features/Documentation.svelte'
 	import ExtraPrediction from '../features/ExtraPrediction.svelte'
 	import LinterIntegration from '../features/LinterIntegration.svelte'
+	import LayeredKeyboardControl from '../features/LayeredKeyboardControl.svelte'
 </script>
