@@ -30,7 +30,8 @@
 	}
 	
 	.description {
-		padding-bottom: 1rem;	
+		padding-bottom: 1rem;
+		margin: 0 1rem;
 	}
 	
 	@media (min-width: 600px) {

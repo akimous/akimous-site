@@ -1,7 +1,4 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay muted loop playsinline src="img/extraPrediction.mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
 	<div class="description">
 		<h1>NLP-assisted Completion</h1>
 		<p>
@@ -11,7 +8,9 @@
 			If you are defining a variable name with multiple words, just keep typing. Akimous will automatically turn the long string of characters into a snake_case variable/function name or a CamelCase class name.
 		</p>
 	</div>
-
+	<video bind:this={video} autoplay muted loop playsinline src="img/extraPrediction.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
 </div>
 
 

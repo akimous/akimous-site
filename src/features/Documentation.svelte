@@ -12,8 +12,8 @@
 	<div bind:this={glide} class="glide">
 		<div class="glide__track" data-glide-el="track">
 			<ul class="glide__slides">
-				<li class="glide__slide"><img src="img/doc1.png" alt=""></li>
-				<li class="glide__slide"><img src="img/doc2.png" alt=""></li>
+				<li class="glide__slide"><img src="img/doc1.png" importance="low" alt=""></li>
+				<li class="glide__slide"><img src="img/doc2.png" importance="low" alt=""></li>
 			</ul>
 		</div>
 		<div class="glide__bullets" data-glide-el="controls[nav]">

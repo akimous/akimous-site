@@ -1,7 +1,4 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay muted loop playsinline src="img/realtimeFormatter.mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
 	<div class="description">
 		<h1>Real-time Formatter</h1>
 		<p>
@@ -14,7 +11,9 @@
 			For more complex formatting, YAPF can be optionally triggered on save. 
 		</p>
 	</div>
-
+	<video bind:this={video} autoplay muted loop playsinline src="img/realtimeFormatter.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
 </div>
 
 

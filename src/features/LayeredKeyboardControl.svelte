@@ -1,7 +1,4 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay muted loop playsinline src="img/layeredKeyboardControl.mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
 	<div class="description">
 		<h1>Layered Keyboard Control</h1>
 		<p>
@@ -31,7 +28,9 @@
 			An on screen cheatsheet is also provided for quick reference.
 		</p>
 	</div>
-
+	<video bind:this={video} autoplay muted loop playsinline src="img/layeredKeyboardControl.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
 </div>
 
 

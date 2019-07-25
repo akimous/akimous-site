@@ -1,7 +1,4 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay muted loop playsinline src="img/console.mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
 	<div class="description">
 		<h1>Interactive Console</h1>
 		<p>
@@ -17,7 +14,9 @@
 			</li>
 		</ul>
 	</div>
-
+	<video bind:this={video} autoplay muted loop playsinline src="img/console.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
 </div>
 
 

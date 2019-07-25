@@ -1,7 +1,4 @@
 <div class="feature-container">
-	<video bind:this={video} autoplay muted loop playsinline src="img/macro.mp4">
-		Sorry, your browser doesn't support embedded videos.
-	</video>
 	<div class="description">
 		<h1>Macros</h1>
 		<p>
@@ -15,7 +12,9 @@
 			without learning a DSL or being limited by the IDE GUI.
 		</p>
 	</div>
-
+	<video bind:this={video} autoplay muted loop playsinline src="img/macro.mp4">
+		Sorry, your browser doesn't support embedded videos.
+	</video>
 </div>
 
 
