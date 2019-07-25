@@ -21,7 +21,7 @@
 
 <style>
 	.feature-container {
-		background-color: #FFF7FC;
+		background-color: #F7FAF2;
 	}
 
 </style>
