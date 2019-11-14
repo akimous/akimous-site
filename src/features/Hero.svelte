@@ -1,6 +1,6 @@
 <div class="container">
-	<h1>AI-assisted Python IDE</h1>
-	<h2>Less keystrokes, more productivity.</h2>
+	<h1>Machine learning-assisted Python IDE</h1>
+	<h2>Fewer keystrokes, more productivity.</h2>
 	<img src="img/hero.png" alt="Main Screenshot">
 </div>
 

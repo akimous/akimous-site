@@ -4,8 +4,8 @@
 	</a>
 	<ul>
 		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
-		<li><a rel=prefetch class:selected="{segment === 'start'}" href='start'>Getting Started</a></li>
-		<li><a href='.'>GitHub</a></li>
+<!--		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted'>Getting Started</a></li>-->
+		<li><a href='https://github.com/akimous/akimous'><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 </nav>
 
@@ -88,11 +88,16 @@
 		display: block;
 		vertical-align: middle;
 	}
+    
+    .fab {
+        vertical-align: middle;
+        color: #555;
+    }
 
 </style>
 
 
 <script>
-	export let segment;
+	export let segment
 
 </script>
