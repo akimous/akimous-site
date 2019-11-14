@@ -16,7 +16,7 @@ export default {
 	client: {
 		input: config.client.input(),
 		output: Object.assign(config.client.output(), {
-			sourcemap: dev
+			sourcemap: dev,
 		}),
 		plugins: [
 			replace({

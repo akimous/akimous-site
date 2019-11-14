@@ -1,66 +1,92 @@
 :root {
-	--primary1: #00014d;
-	--primary2: #003085;
+    --primary1: #00014d;
+    --primary2: #003085;
 }
 
 body {
-	margin: 0;
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	color: #333;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
 }
 
 @media (min-width: 400px) {
-	body {
-		font-size: 16px;
-	}
+    body {
+        font-size: 16px;
+    }
 }
 
 a {
-	color: inherit;
+    color: inherit;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 code {
-	font-family: "Source Code Pro", monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
+    font-family: "Source Code Pro", monospace;
+    font-size: calc(1em - 2px);
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
 }
 
 /*Features*/
 .feature-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .feature-container video,
 .feature-container .glide {
-	width: 26rem;
-	max-width: 32rem;
-	flex-grow: 1;
-	margin: 0 1rem;
+    width: 26rem;
+    max-width: 32rem;
+    flex-grow: 1;
+    margin: 0 1rem;
 }
 
 .feature-container video {
-	border-radius: .5rem;
+    border-radius: .5rem;
 }
 
 .feature-container img {
-	width: 100%;
-	border-radius: .5rem;
+    width: 100%;
+    border-radius: .5rem;
 }
 
 .feature-container .description {
-	width: 26rem;
-	max-width: 32rem;
-	flex-grow: 2;
-	margin: 0 1rem;
+    width: 26rem;
+    max-width: 32rem;
+    flex-grow: 2;
+    margin: 0 1rem;
+}
+
+/*Getting Started*/
+.single-column-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.single-column-container > section {
+    width: 48rem;
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+
+section h1 {
+    font-size: 3rem;
+    font-family: Saira;
+    color: var(--primary1);
+    text-shadow: 0 0 0.5rem white;
+}
+
+section pre {
+    border-radius: .5rem;
 }

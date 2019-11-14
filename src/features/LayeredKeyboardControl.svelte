@@ -45,12 +45,11 @@
 
 <script>
 	import { onMount } from 'svelte'
+    import { autoPlay } from '../utils'
 
-	let video
-	onMount(() => {
-		setTimeout(() => {
-			video.play()
-		}, 3000)
-	})
+    let video
+    onMount(() => {
+        autoPlay(video)
+    })
 
 </script>

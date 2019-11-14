@@ -4,7 +4,7 @@
 	</a>
 	<ul>
 		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
-<!--		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted'>Getting Started</a></li>-->
+		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted'>Getting Started</a></li>
 		<li><a href='https://github.com/akimous/akimous'><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 </nav>
