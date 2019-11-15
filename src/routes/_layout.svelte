@@ -15,7 +15,7 @@
     footer {
         padding: 1rem;
         text-align: center;
-        color: #777;
+        color: #555;
     }
 </style>
 

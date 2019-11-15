@@ -1,51 +1,77 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
-	<meta name="author" content="Yu-Ann Chen">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <meta name="author" content="Yu-Ann Chen">
     <meta name="Description" content="A Python IDE with AI assisted auto-completion for maximized productivity.">
     <meta name="theme-color" content="#242424" />
 
-	%sapper.base%
+    %sapper.base%
 
-	<link href="https://fonts.googleapis.com/css?family=Lato|Saira&display=swap" rel="stylesheet">
-	<link rel='stylesheet' href='global.css'>
-	<link rel='manifest' href='manifest.json'>
-	<link rel='icon' type='image/x-icon' href='favicon.ico'>
-	<title>Akimous</title>
-	
-	<style>
-		#logo {
-			position: relative;
-			height: 2.5rem;
-			top: .5rem;
-			padding-right: .5rem;
-		}
-        
+    <link href="https://fonts.googleapis.com/css?family=Lato|Saira&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='global.css'>
+    <link rel='manifest' href='manifest.json'>
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <link rel="apple-touch-icon" href="logo-192.png">
+    <title>Akimous</title>
+
+    <style>
+        #logo {
+            position: relative;
+            height: 2.5rem;
+            top: .5rem;
+            padding-right: .5rem;
+        }
+
         .hidden {
             display: none;
         }
-	</style>
-	
-	<!-- Sapper generates a <style> tag containing critical CSS
+
+        #progress-bar {
+            position: fixed;
+            top: 49.5vh;
+            height: .5vh;
+            width: 100vw;
+            background: #003085;
+            animation-duration: 3s;
+            animation-name: progress;
+        }
+
+        @keyframes progress {
+            from {
+                transform: scale(0, 1);
+            }
+
+            to {
+                transform: scale(1, 1);
+            }
+        }
+
+    </style>
+
+    <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-	%sapper.styles%
+    %sapper.styles%
 
-	<!-- This contains the contents of the <svelte:head> component, if
+    <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-	%sapper.head%
+    %sapper.head%
 </head>
-<body>
-	<!-- The application will be rendered inside this element,
-	     because `app/client.js` references it -->
-	<div id="sapper" class="hidden">%sapper.html%</div>
 
-	<!-- Sapper creates a <script> tag containing `app/client.js`
+<body>
+    <div id="progress-bar"></div>
+    <!-- The application will be rendered inside this element,
+	     because `app/client.js` references it -->
+    <div id="sapper" class="hidden">%sapper.html%</div>
+
+    <!-- Sapper creates a <script> tag containing `app/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-	%sapper.scripts%
-	<script src="https://kit.fontawesome.com/c9e4a2b909.js" crossorigin="anonymous"></script>
+    %sapper.scripts%
+    <script src="https://kit.fontawesome.com/c9e4a2b909.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

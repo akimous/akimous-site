@@ -1,11 +1,11 @@
 <nav>
-	<a class="home" href=".">
+	<a class="home" href="." aria-label="home">
 		<img id="logo" src="logo.svg" alt="logo"><span>Akimous</span>
 	</a>
 	<ul>
-		<li><a rel=prefetch class:selected="{!segment}" href='.'>Home</a></li>
-		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted'>Getting Started</a></li>
-		<li><a href='https://github.com/akimous/akimous'><i class="fab fa-github fa-2x"></i></a></li>
+		<li><a rel=prefetch class:selected="{!segment}" href='.' aria-label="home">Home</a></li>
+		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted' aria-label="getting started">Getting Started</a></li>
+		<li><a href='https://github.com/akimous/akimous' aria-label="github"><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 </nav>
 
