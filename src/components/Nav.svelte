@@ -4,7 +4,7 @@
 	</a>
 	<ul>
 		<li><a rel=prefetch class:selected="{!segment}" href='.' aria-label="home">Home</a></li>
-		<li><a rel=prefetch class:selected="{segment === 'gettingStarted'}" href='gettingStarted' aria-label="getting started">Getting Started</a></li>
+		<li><a rel=prefetch class:selected="{segment === 'start'}" href='start' aria-label="getting started">Getting Started</a></li>
 		<li><a href='https://github.com/akimous/akimous' aria-label="github"><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 </nav>
