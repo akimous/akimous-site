@@ -14,3 +14,7 @@ serve: | all
 	
 convert:
 	ffmpeg -i original-images/$(video).mov -vcodec h264 -preset veryslow -tune animation original-images/$(video).mp4
+	
+postpublish:
+	yarn run linkinator https://akimous.com
+	

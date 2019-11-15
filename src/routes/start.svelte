@@ -8,6 +8,11 @@
             </li>
             <li>
                 C/C++ compiler (some dependencies require one during installation, notably XGBoost and python-levenshtein)
+                <ul>
+                    <li>
+                        If you are using Windows, make sure "Build Tools for Visual Studio 2019" or newer is installed (check "C++ build tools" during installation).
+                    </li>
+                </ul>
             </li>
             <li>
                 A modern browser (recent versions of Firefox, Edge or Chrome)
