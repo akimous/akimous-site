@@ -1,4 +1,5 @@
 all:
+	node --version
 	yarn run eslint --ext .svelte,.js .
 	yarn run sapper export
 	
