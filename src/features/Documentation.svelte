@@ -40,9 +40,9 @@
 	let glide
 	
 	onMount(() => {
-		new Glide(glide, {
-			autoplay: 5000,
-		}).mount()
+	    new Glide(glide, {
+	        autoplay: 5000,
+	    }).mount()
 	})
 
 </script>

@@ -29,11 +29,11 @@
 
 <script>
 	import { onMount } from 'svelte'
-    import { autoPlay } from '../utils'
+import { autoPlay } from '../utils'
 
-    let video
-    onMount(() => {
-        autoPlay(video)
-    })
+let video
+onMount(() => {
+    autoPlay(video)
+})
 
 </script>

@@ -1,4 +1,5 @@
 all:
+	yarn run eslint --ext .svelte,.js .
 	yarn run sapper export
 	
 dev:
@@ -7,7 +8,7 @@ dev:
 upgrade:
 	yarn upgrade --interactive
 	
-serve:
+serve: | all
 	yarn run serve __sapper__/export
 	
 convert:

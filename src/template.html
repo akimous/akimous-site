@@ -34,9 +34,12 @@
             top: 49.5vh;
             height: .5vh;
             width: 100vw;
+            transform: scale(0, 1);
             background: #003085;
             animation-duration: 3s;
             animation-name: progress;
+            animation-fill-mode: backwards;
+            z-index: -100;
         }
 
         @keyframes progress {

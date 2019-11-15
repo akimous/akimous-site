@@ -1,0 +1,3 @@
+__sapper__/
+src/node_modules/
+src/service-worker.js
