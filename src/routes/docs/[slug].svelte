@@ -74,10 +74,6 @@
         padding-top: 0;
     }
     
-    a {
-        text-decoration: none;
-    }
-    
     .bold {
         color: #333;
         font-weight: 700;
@@ -103,9 +99,9 @@
         smartLists: true,
     })
 
-    export async function preload(page, session) {
+    export async function preload(page) {
         const { slug } = page.params
-        const response = await this.fetch(`markdown/${slug}.md`)
+        const response = await fetch(`markdown/${slug}.md`)
         const source = await response.text()
         return {
             renderedContent: marked(source),
@@ -128,7 +124,7 @@
 
     onMount(() => {
         requestAnimationFrame(() => {
-            const navHeight = document.getElementById("nav").getBoundingClientRect().height
+            const navHeight = document.getElementById('nav').getBoundingClientRect().height
             window.onscroll = () => {
                 scrolled = window.scrollY > navHeight
             }
