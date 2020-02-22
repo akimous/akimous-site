@@ -26,4 +26,6 @@
 </main>
 
 
-<footer>Copyright © 2019 Yu-Ann Chen. All Rights Reserved</footer>
+{#if segment && !segment.startsWith('docs')}
+<footer>Copyright © 2019-2020 Yu-Ann Chen. All Rights Reserved</footer>
+{/if}

@@ -1,10 +1,11 @@
-<nav>
+<nav id="nav">
 	<a class="home" href="." aria-label="home">
 		<img id="logo" src="logo.svg" alt="logo"><span>Akimous</span>
 	</a>
 	<ul>
 		<li><a rel=prefetch class:selected="{!segment}" href='.' aria-label="home">Home</a></li>
 		<li><a rel=prefetch class:selected="{segment === 'start'}" href='start' aria-label="getting started">Getting Started</a></li>
+		<li><a rel=prefetch class:selected="{isDoc(segment)}" href='docs/introduction' aria-label="documentation">Docs</a></li>
 		<li><a href='https://github.com/akimous/akimous' aria-label="github"><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 </nav>
@@ -43,7 +44,7 @@
 		right: 3rem;
 	}
 		
-	@media (max-width: 600px) {
+	@media (max-width: 700px) {
 		.home {
 			padding-left: 0;
 			font-size: 1.5rem;
@@ -76,10 +77,11 @@
 		position: absolute;
 		content: '';
 		width: calc(100% - .95rem);
-		height: .3rem;
+		height: .2rem;
 		background-color: var(--primary2);
 		display: block;
-		bottom: -.2rem;
+		bottom: 0;
+        z-index: -100;
 	}
 
 	a {
@@ -87,6 +89,7 @@
 		padding: 0 0.5rem;
 		display: block;
 		vertical-align: middle;
+        overflow-y: hidden;
 	}
     
     .fab {
@@ -100,4 +103,7 @@
 <script>
 	export let segment
 
+    function isDoc(segment) {
+        return segment && segment.startsWith('docs')
+    }
 </script>
