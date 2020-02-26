@@ -7,7 +7,7 @@ dev:
 	yarn run sapper dev
 	
 upgrade:
-	yarn upgrade --interactive
+	yarn upgrade-interactive --latest
 	
 serve: | all
 	yarn run serve __sapper__/export

@@ -9,11 +9,29 @@
 {#if tocOpened || tocFixed}
 <div class="toc" class:snap-to-top="{scrolled}" class:toc-fixed="{tocFixed}" transition:fly="{{x: -300}}">
     <ul>
-        <TocItem link="introduction">Introduction</TocItem>
         <li>
-            <span class="bold">Concepts</span>
+            <TocItem link=""><b>Concepts</b></TocItem>
             <ul>
+                <TocItem link="">Tech Stack</TocItem>
                 <TocItem link="concepts-ui-design">UI Design</TocItem>
+            </ul>
+        </li>
+        <TocItem link="introduction">UI Walkthrough</TocItem>
+        <li>
+            <TocItem link=""><b>Features</b></TocItem>
+            <ul>
+                <TocItem link="">Completion Engine</TocItem>
+                <TocItem link="">Layered Keyboard Control</TocItem>
+                <TocItem link="">Realtime Formatter</TocItem>
+                <TocItem link="">Run Configuration</TocItem>
+                <TocItem link="">File Tree</TocItem>
+                <TocItem link="">Outline</TocItem>
+                <TocItem link="">Documentation</TocItem>
+                <TocItem link="">Console</TocItem>
+                <TocItem link="">Linter/Formatter</TocItem>
+                <TocItem link="">Clipboard/Macro</TocItem>
+                <TocItem link="">Find/Replace</TocItem>
+                <TocItem link="">References</TocItem>
             </ul>
         </li>
     </ul>
@@ -74,7 +92,7 @@
         padding-top: 0;
     }
     
-    .bold {
+    b {
         color: #333;
         font-weight: 700;
     }
