@@ -7,7 +7,10 @@
                 Python 3.7 or 3.8 (with pip)
             </li>
             <li>
-                C/C++ compiler (some dependencies require one during installation, notably XGBoost and python-levenshtein)
+                Git (for version control integration)
+            </li>
+            <li>
+                C/C++ compiler (some dependencies may require one during installation, notably XGBoost and python-levenshtein)
                 <ul>
                     <li>
                         If you are using Windows, make sure "Build Tools for Visual Studio 2019" or newer is installed (check "C++ build tools" during installation).
